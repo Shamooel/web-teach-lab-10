@@ -12,7 +12,7 @@ function Navbar() {
             </ul>
             <div className="navbar-search">
                 <input type="text" placeholder="Search..." className="search-input" />
-                <button className="search-button">Go</button>
+                <button className="search-button">✓</button>
             </div>
         </nav>
     
