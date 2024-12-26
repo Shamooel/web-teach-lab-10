@@ -3,8 +3,7 @@ import React from "react";
 function Home() {
   return (
     <div className="home-container">
-      
-      {/* Hero Section */}
+ 
       <section className="hero">
         <div className="hero-content">
           <h1>Elevate</h1> 
@@ -35,7 +34,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Product Section */}
       <section className="product-section">
         <div className="product-card">
           <img
