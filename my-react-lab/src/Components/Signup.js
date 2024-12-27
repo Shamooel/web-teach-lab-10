@@ -1,71 +1,92 @@
-import React, { useState } from 'react';
-
+import React, { useState } from "react";
 
 function Signup() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    password: "",
+  });
 
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
 
- 
-  const Submit = () => {
-    alert(`Email: ${email}, Password: ${password}, FirstName: ${firstName},  LastName: ${lastName}`);
+  const handleSubmit = (e) => {
+    e.preventDefault(); 
+    alert(
+      `First Name: ${formData.firstName}, Last Name: ${formData.lastName}, Email: ${formData.email}, Password: ${formData.password}`
+    );
   };
 
   return (
     <div className="create-account-container">
       <h1>Create an account</h1>
-      <form className="create-account-form" onSubmit={Submit}>
-        <label htmlFor="firstName" className="form-label">First name</label>
+      <form className="create-account-form" onSubmit={handleSubmit}>
+        <label htmlFor="firstName" className="form-label">
+          First name
+        </label>
         <input
           type="text"
           id="firstName"
+          name="firstName"
           placeholder="First name"
           className="form-input"
-          value={firstName}
-          onChange={(e) => setFirstName(e.target.value)}
-         
+          value={formData.firstName}
+          onChange={handleChange}
         />
 
-        <label htmlFor="lastName" className="form-label">Last name</label>
+        <label htmlFor="lastName" className="form-label">
+          Last name
+        </label>
         <input
           type="text"
           id="lastName"
+          name="lastName"
           placeholder="Last name"
           className="form-input"
-          value={lastName}
-          onChange={(e) => setLastName(e.target.value)}
+          value={formData.lastName}
+          onChange={handleChange}
         />
 
-        <label htmlFor="email" className="form-label">Email Address</label>
+        <label htmlFor="email" className="form-label">
+          Email Address
+        </label>
         <input
           type="email"
           id="email"
+          name="email"
           placeholder="Email Address"
           className="form-input"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          value={formData.email}
+          onChange={handleChange}
         />
 
-        <label htmlFor="password" className="form-label">Password</label>
+        <label htmlFor="password" className="form-label">
+          Password
+        </label>
         <input
           type="password"
           id="password"
+          name="password"
           placeholder="Password"
           className="form-input"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}   
+          value={formData.password}
+          onChange={handleChange}
         />
 
         <button type="submit" className="signup-button">
-            <span>→</span> login
+          <span>→</span> Login
         </button>
       </form>
 
       <div className="additional-links">
         <p>
-          Already have an account? <a href="/login" className="login-link">Login</a>
+          Already have an account?{" "}
+          <a href="/login" className="login-link">
+            Login
+          </a>
         </p>
       </div>
     </div>
@@ -73,3 +94,4 @@ function Signup() {
 }
 
 export default Signup;
+

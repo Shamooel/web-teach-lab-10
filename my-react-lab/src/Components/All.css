@@ -93,7 +93,7 @@
     font-size: 14px;
     margin-bottom: 5px;
     text-decoration: dotted;
-    background-color: white;
+
   }
   
   .form-input {
@@ -600,6 +600,39 @@ button:hover {
   margin: 8px 0;
   font-size: 14px;
   color: #ffffff;
+}
+
+/* About.css */
+
+.about-container {
+  padding: 300px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #ffffff;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-description {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.about-description:last-child {
+  margin-bottom: 0;
 }
 
 
