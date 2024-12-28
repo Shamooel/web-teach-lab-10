@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 function User() {
   const { userId } = useParams();
 
-  // Mock user data
+ 
   const userData = {
     id: "24G-BCS-032",
     name: "Shamoeel Ali",
@@ -45,9 +45,6 @@ function User() {
         </p>
         <p>
           <strong>Quote:</strong> "{userData.quote}"
-        </p>
-        <p>
-          <strong>Status:</strong> {userData.status}
         </p>
       </div>
     </div>

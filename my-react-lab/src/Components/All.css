@@ -537,7 +537,7 @@ button:hover {
   align-items: center;
   gap: 20px;
   margin-bottom: 20px;
-  padding: 100px;
+
 }
 
 .profile-image {
@@ -545,19 +545,19 @@ button:hover {
   height: 600px;
   border-radius: 50px;
   object-fit: cover;
-  border: 2px solid #ddd;
+  border-radius: 80px;
+ 
   padding: 60px;
 }
 
 .profile-info h1 {
-  margin: 0;
+  margin: 10px;
   font-size: 22px;
-  color: #ffffff;
+  color: #f3f3f3;
   font-size: 100px;
 }
 
 .profile-info h2 {
-  margin: 5px 0;
   font-size: 100px;
   color: #ffffff;
 }
@@ -567,15 +567,14 @@ button:hover {
 }
 
 .about-section h3 {
-  margin-bottom: 10px;
-  font-size: 18px;
-  color: #ffffff;
+  font-size: 30px;
+  color: wheat;
   font-size: 40px;
 }
 
 .about-section p {
   margin: 0;
-  font-size: 14px;
+  font-size: 25px;
   color: hsl(0, 0%, 100%);
 }
 
@@ -598,7 +597,7 @@ button:hover {
 
 .additional-info p {
   margin: 8px 0;
-  font-size: 14px;
+  font-size: 25px;
   color: #ffffff;
 }
 
